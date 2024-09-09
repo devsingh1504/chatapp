@@ -7,7 +7,6 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    //backend url
     origin: "http://localhost:3001",
     methods: ["GET", "POST"],
   },
