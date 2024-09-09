@@ -9,20 +9,20 @@ function User({ user }) {
   const isOnline = onlineUsers.includes(user._id);
   return (
     <div
-      className={`hover:bg-slate-600 duration-300 ${
-        isSelected ? "bg-slate-700" : ""
-      }`}
+      className={` duration-300 ${isSelected ? "" : ""}`}
       onClick={() => setSelectedConversation(user)}
     >
-      <div className="flex space-x-4 px-8 py-3 hover:bg-slate-700 duration-300 cursor-pointer">
+      <div className="flex space-x-4 px-8 py-3 hover:bg-slate-900 hover:rounded-full duration-300 cursor-pointer">
         <div className={`avatar ${isOnline ? "online" : ""}`}>
           <div className="w-12 rounded-full">
-            <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            <img
+              src={`https://avatar.iran.liara.run/username?username=${user.fullname}`}
+            />
           </div>
         </div>
         <div>
-          <h1 className=" font-bold">{user.fullname}</h1>
-          <span>{user.email}</span>
+          <h1 className=" font-bold text-xl">{user.fullname}</h1>
+          {/* <span>{user.email}</span> */}
         </div>
       </div>
     </div>

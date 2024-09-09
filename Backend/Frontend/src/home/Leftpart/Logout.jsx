@@ -26,9 +26,10 @@ function Logout() {
       <div className=" h-[10vh] bg-transparent">
         <div>
           <BiLogOutCircle
-            className="text-5xl text-white hover:bg-slate-700 duration-300 cursor-pointer rounded-full p-2 ml-2 mt-1"
+            className="text-5xl text-white hover:bg-slate-700 duration-300 cursor-pointer rounded-full p-2 ml-2 mt-2"
             onClick={handleLogout}
           />
+          <h1 className="ml-2 font-semibold">Logout</h1>
         </div>
       </div>
     </>

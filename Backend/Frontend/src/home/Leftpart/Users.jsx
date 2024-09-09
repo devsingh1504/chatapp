@@ -4,11 +4,11 @@ import useGetAllUsers from "../../context/useGetAllUsers";
 
 function Users() {
   const [allUsers, loading] = useGetAllUsers();
-  console.log(allUsers);
+  // console.log(allUsers);
   return (
     <div>
-      <h1 className="px-8 py-2 text-white font-semibold bg-slate-800 rounded-md">
-        Messages
+      <h1 className="px-8 py-1 text-white font-bold text-center bg-slate-700 rounded-md mt-1">
+        Friends
       </h1>
       <div
         className="py-2 flex-1 overflow-y-auto"

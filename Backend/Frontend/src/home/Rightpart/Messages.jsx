@@ -6,7 +6,7 @@ import useGetSocketMessage from "../../context/useGetSocketMessage.js";
 function Messages() {
   const { loading, messages } = useGetMessage();
   useGetSocketMessage(); // listing incoming messages
-  console.log(messages);
+  //console.log(messages);
 
   const lastMsgRef = useRef();
   useEffect(() => {
@@ -36,7 +36,7 @@ function Messages() {
 
       {!loading && messages.length === 0 && (
         <div>
-          <p className="text-center mt-[20%]">
+          <p className="text-center font-bold text-xl mt-[20%]">
             Say! Hi to start the conversation
           </p>
         </div>

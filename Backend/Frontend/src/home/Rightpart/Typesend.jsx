@@ -7,7 +7,7 @@ function Typesend() {
   const { loading, sendMessages } = useSendMessage();
 
   const handleSubmit = async (e) => {
-    console.log(e);
+    //console.log(e);
     e.preventDefault();
     await sendMessages(message);
     setMessage("");
@@ -16,17 +16,17 @@ function Typesend() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex space-x-1 h-[8vh]  bg-gray-800">
-        <div className=" w-[70%] mx-4">
+        <div className=" w-[90%] mx-4 text-black">
           <input
             type="text"
-            placeholder="Type here"
+            placeholder="Send messages"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             className="border border-gray-700 rounded-xl outline-none mt-1 px-4 py-3 w-full"
           />
         </div>
         <button>
-          <IoSend className="text-3xl" />
+          <IoSend className="text-3xl mr-2" />
         </button>
       </div>
     </form>

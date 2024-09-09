@@ -37,7 +37,7 @@ export default Right;
 
 const NoChatSelected = () => {
   const [authUser] = useAuth();
-  console.log(authUser);
+  //console.log(authUser);
   return (
     <>
       <div className="relative">
@@ -55,7 +55,7 @@ const NoChatSelected = () => {
             </span>
             <br />
             No chat selected, please start conversation by selecting anyone to
-            your contacts
+            your friends
           </h1>
         </div>
       </div>
